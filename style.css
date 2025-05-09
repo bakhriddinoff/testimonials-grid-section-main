@@ -1,11 +1,11 @@
 *,html {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 body {
     background-color: rgb(245, 245, 245);
+    color: white;
 }
 main {
     margin-top: 300px;
@@ -13,23 +13,29 @@ main {
     grid-template-columns: repeat(12, 1fr);
     margin-left: auto;
     margin-right: auto;
-    max-width: 1400px;
     gap: 30px;
-}
-
-.text-wrap, .texts-wrapper {
-    width: 100%;
-}
-
-.texts-wrapper {
-    width: 100%;
+    max-width: 1500px;
 }
 
 .card1 {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: auto;
     border-radius: 10px;
     grid-column: 1/6;
     background-color: rgb(115, 63, 200);
+    position: relative;
+    z-index: -2;
+}
+
+.sign {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 40px;
 }
 
 .card2 {
@@ -54,7 +60,6 @@ main {
 }
 
 .card5 {
-    color: white;
     border-radius: 10px;
     grid-column: 3/9;
     background-color: rgb(25, 31, 45);
@@ -66,6 +71,49 @@ main {
     border: 2px solid rgb(219, 180, 255);
 }
 
-.name {
-    w
+.name, .job {
+    font-size: 18px;
 }
+
+.job {
+    font-size: 14px;
+}
+
+.text1 {
+    font-size: 22px;
+}
+
+.text2 {
+    font-size: 14px;
+}
+
+.wrapper {
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+    width: 100%;
+}
+
+.texts-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.card5 .texts-wrapper {
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+
+/* .texts-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+} 
+
+.cards3 .texts-wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+} */
