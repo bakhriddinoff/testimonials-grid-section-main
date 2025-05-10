@@ -117,3 +117,14 @@ main {
     padding-right: 0px;
     padding-bottom: 0px;
 } */
+
+@media (max-width: 420px) {
+    main {
+        margin-top: 200px;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+    }
+    .card1, .card2, .card3, .card4, .card5 {
+        grid-column: 2/8;
+    }
+}
